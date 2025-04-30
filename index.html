@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Repertorio Musicala 2025</title>
+
+  <!-- Bootstrap y DataTables CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css"
+    rel="stylesheet"
+  />
+  <!-- Tu CSS custom -->
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <!-- Logo Musicala -->
+    <img
+      class="logo"
+      src="https://static.wixstatic.com/media/85afce_3adb3865c88a492b93a8bf2dc69049c3~mv2.png"
+      alt="Logo Musicala"
+    />
+
+    <!-- Título y última actualización -->
+    <h1>🎵 Repertorio Musicala 2025</h1>
+    <div id="lastUpdate"></div>
+
+    <!-- Descripción -->
+    <p class="lead">
+      Esta tabla se actualiza directamente desde nuestro archivo TSV publicado.
+      Usa el buscador para filtrar rápidamente.
+    </p>
+
+    <!-- Tabla responsive -->
+    <div class="table-responsive">
+      <table id="tablaRep" class="table table-striped">
+        <thead>
+          <tr>
+            <th>Canción</th>
+            <th>Artista</th>
+            <th>Categoría</th>
+            <th>Instrumentos</th>
+            <th>Estado</th>
+            <th>Docente</th>
+            <th>Bajo</th>
+            <th>Batería</th>
+            <th>Canto</th>
+            <th>Cello</th>
+            <th>Guitarra acústica</th>
+            <th>Guitarra eléctrica</th>
+            <th>Piano</th>
+            <th>Ukelele</th>
+            <th>Viola</th>
+            <th>Violín</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Pie -->
+    <footer>© 2025 Musicala. Todos los derechos de uso son propiedad de Musicala.</footer>
+  </div>
+
+  <!-- Dependencias JS -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <!-- Tu JS custom -->
+  <script src="script.js"></script>
+</body>
+</html>
